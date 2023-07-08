@@ -1,0 +1,87 @@
+/* Styles for the form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('E:\BG PHOTOS\Post.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+/* Styles for the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1),
+    0px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+form h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input[type='text'],
+form input[type='file'] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+form input[type='file'] {
+  margin-top: 10px;
+}
+
+form button[type='submit'] {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+}
+
+form button[type='submit']:hover {
+  background-color: #1565c0;
+}
+
+/* Styles for form error messages */
+.form-error {
+  font-size: 1.2rem;
+  color: #d50000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Styles for form success message */
+.form-success {
+  font-size: 1.2rem;
+  color: #008000;
+  margin-bottom: 10px;
+  text-align: center;
+}
